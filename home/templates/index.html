@@ -1,11 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Django 첫 배포 성공!!</h1>
-</body>
+<html>
+    <head>
+        <title>Introduce Myself</title>
+    </head>
+    <body>
+        
+        <h1>Nice to meet you guys</h1>
+        <p>
+        Name : Kim DongHwan <br>
+        Food : everything<br>
+        Exercise : Tennis, Hiking, squash, Surfing<br>
+        Interest : CV(Human Activity recognition), NLP etc <del>In fact, all fields are interesting</del><br>
+        </p>
+        <h3>The picture below is when I played tennis with my friends.</h3>
+        <img src="{% static 'img/test.png' %}" style="max-width:50%; height:auto;">
+    </body>
 </html>
